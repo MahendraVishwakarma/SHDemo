@@ -27,7 +27,7 @@ struct AddEventView: View {
 
             TextField("Description", text: $eventDescription)
 
-            DatePicker(selection: $eventDate, displayedComponents: .date) {
+            DatePicker(selection: $eventDate, in: Date()..., displayedComponents: .date) {
                 Text("Event Date: ")
             }
 

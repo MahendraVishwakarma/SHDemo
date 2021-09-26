@@ -18,7 +18,7 @@ struct AddReminderView: View {
 
     var body: some View {
         Form {
-            DatePicker(selection: $reminderTime) {
+            DatePicker(selection: $reminderTime, in: Date()...) {
                 Text("Reminder Time: ")
             }
             TextField("Label", text: $reminderLabel)
