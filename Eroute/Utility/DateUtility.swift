@@ -26,7 +26,7 @@ class DateUtility {
         guard !text.isEmpty else { return Date() }
 
         let formatter = DateFormatter()
-        formatter.dateFormat = "MM-dd-yyyy "
+        formatter.dateFormat = "MM-dd-yyyy"
 
         let dateInitialText = formatter.string(from: Date())
         let completeDateText = dateInitialText + " " + text
@@ -65,5 +65,33 @@ class DateUtility {
         let formatter = DateFormatter()
         formatter.dateFormat = "EEEE, MMM d, yyyy"
         return formatter.string(from: date)
+    }
+
+    func getDateFromDateText(from text: String) -> Date {
+        guard !text.isEmpty else { return Date() }
+        let formatter = DateFormatter()
+        formatter.dateFormat = "EEEE, MMM d, yyyy"
+
+        if let date = formatter.date(from: text) {
+            return date
+        }
+        return Date()
+    }
+
+    func getEventTime12HourDate(from initialDateText: String, hourTimeText: String) -> Date {
+        guard !initialDateText.isEmpty,
+            !hourTimeText.isEmpty else { return Date() }
+
+        let formatter = DateFormatter()
+
+        let completeDateText = initialDateText + " " + hourTimeText
+
+        formatter.dateFormat = "EEEE, MMM d, yyyy hh:mm a"
+
+        if let date = formatter.date(from: completeDateText) {
+            return date
+        }
+
+        return Date()
     }
 }

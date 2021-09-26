@@ -14,7 +14,7 @@ struct EventCardView: View {
 
     var body: some View {
 
-        NavigationLink(destination: AddAlarmView()) {
+        NavigationLink(destination: EditEventView(event)) {
             VStack(alignment: .leading) {
 
                 HStack(alignment: .top) {
