@@ -14,6 +14,22 @@
 		403A22B126FE1CB3008D8DEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 403A22B026FE1CB3008D8DEA /* Assets.xcassets */; };
 		403A22B426FE1CB3008D8DEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 403A22B326FE1CB3008D8DEA /* Preview Assets.xcassets */; };
 		403A22B726FE1CB3008D8DEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403A22B526FE1CB3008D8DEA /* LaunchScreen.storyboard */; };
+		403A22C426FE1D6F008D8DEA /* AlarmListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403A22C326FE1D6F008D8DEA /* AlarmListView.swift */; };
+		403A22C626FE1E8D008D8DEA /* AlarmCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403A22C526FE1E8D008D8DEA /* AlarmCardView.swift */; };
+		403A22C826FE2FA6008D8DEA /* ReminderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403A22C726FE2FA6008D8DEA /* ReminderListView.swift */; };
+		403A22CA26FE31A9008D8DEA /* ReminderCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403A22C926FE31A9008D8DEA /* ReminderCardView.swift */; };
+		403A22CC26FE3AF3008D8DEA /* AddAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403A22CB26FE3AF2008D8DEA /* AddAlarmView.swift */; };
+		403A22CF26FE513D008D8DEA /* AlarmCoreDataAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403A22CE26FE513D008D8DEA /* AlarmCoreDataAction.swift */; };
+		403A22D126FE64D5008D8DEA /* EditAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403A22D026FE64D5008D8DEA /* EditAlarmView.swift */; };
+		403A22D426FE68F9008D8DEA /* RepeatValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403A22D326FE68F9008D8DEA /* RepeatValue.swift */; };
+		403A22DA26FE6A98008D8DEA /* AlarmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403A22D926FE6A98008D8DEA /* AlarmModel.swift */; };
+		403A22DD26FE6B2E008D8DEA /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403A22DC26FE6B2E008D8DEA /* DateUtility.swift */; };
+		409A7D8327009C6D00CEFF60 /* EditReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409A7D8227009C6D00CEFF60 /* EditReminderView.swift */; };
+		40B2453927008E2E004C27A9 /* AlarmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B2453827008E2E004C27A9 /* AlarmViewModel.swift */; };
+		40B2453D27008ED0004C27A9 /* DataBaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B2453C27008ED0004C27A9 /* DataBaseError.swift */; };
+		40B2454127009101004C27A9 /* AddReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B2454027009101004C27A9 /* AddReminderView.swift */; };
+		40B245432700916F004C27A9 /* ReminderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B245422700916F004C27A9 /* ReminderModel.swift */; };
+		40B24546270092AA004C27A9 /* ReminderCoreDataAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B24545270092AA004C27A9 /* ReminderCoreDataAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +42,22 @@
 		403A22B326FE1CB3008D8DEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		403A22B626FE1CB3008D8DEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		403A22B826FE1CB3008D8DEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		403A22C326FE1D6F008D8DEA /* AlarmListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListView.swift; sourceTree = "<group>"; };
+		403A22C526FE1E8D008D8DEA /* AlarmCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmCardView.swift; sourceTree = "<group>"; };
+		403A22C726FE2FA6008D8DEA /* ReminderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListView.swift; sourceTree = "<group>"; };
+		403A22C926FE31A9008D8DEA /* ReminderCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCardView.swift; sourceTree = "<group>"; };
+		403A22CB26FE3AF2008D8DEA /* AddAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmView.swift; sourceTree = "<group>"; };
+		403A22CE26FE513D008D8DEA /* AlarmCoreDataAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmCoreDataAction.swift; sourceTree = "<group>"; };
+		403A22D026FE64D5008D8DEA /* EditAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAlarmView.swift; sourceTree = "<group>"; };
+		403A22D326FE68F9008D8DEA /* RepeatValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatValue.swift; sourceTree = "<group>"; };
+		403A22D926FE6A98008D8DEA /* AlarmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmModel.swift; sourceTree = "<group>"; };
+		403A22DC26FE6B2E008D8DEA /* DateUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtility.swift; sourceTree = "<group>"; };
+		409A7D8227009C6D00CEFF60 /* EditReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditReminderView.swift; sourceTree = "<group>"; };
+		40B2453827008E2E004C27A9 /* AlarmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewModel.swift; sourceTree = "<group>"; };
+		40B2453C27008ED0004C27A9 /* DataBaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseError.swift; sourceTree = "<group>"; };
+		40B2454027009101004C27A9 /* AddReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderView.swift; sourceTree = "<group>"; };
+		40B245422700916F004C27A9 /* ReminderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderModel.swift; sourceTree = "<group>"; };
+		40B24545270092AA004C27A9 /* ReminderCoreDataAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCoreDataAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +90,15 @@
 		403A22A626FE1CAC008D8DEA /* Eroute */ = {
 			isa = PBXGroup;
 			children = (
-				403A22A726FE1CAC008D8DEA /* AppDelegate.swift */,
-				403A22A926FE1CAC008D8DEA /* SceneDelegate.swift */,
-				403A22AE26FE1CAC008D8DEA /* ContentView.swift */,
-				403A22B026FE1CB3008D8DEA /* Assets.xcassets */,
-				403A22B526FE1CB3008D8DEA /* LaunchScreen.storyboard */,
-				403A22B826FE1CB3008D8DEA /* Info.plist */,
+				403A22DB26FE6B1F008D8DEA /* Utility */,
+				403A22CD26FE5092008D8DEA /* CoreDataAction */,
+				403A22BE26FE1CC8008D8DEA /* AppDelegate */,
 				403A22AB26FE1CAC008D8DEA /* Eroute.xcdatamodeld */,
+				403A22B826FE1CB3008D8DEA /* Info.plist */,
+				403A22C126FE1CFA008D8DEA /* launch */,
 				403A22B226FE1CB3008D8DEA /* Preview Content */,
+				403A22C026FE1CF0008D8DEA /* Resources */,
+				403A22BF26FE1CE7008D8DEA /* module */,
 			);
 			path = Eroute;
 			sourceTree = "<group>";
@@ -76,6 +109,149 @@
 				403A22B326FE1CB3008D8DEA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		403A22BE26FE1CC8008D8DEA /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				403A22A926FE1CAC008D8DEA /* SceneDelegate.swift */,
+				403A22A726FE1CAC008D8DEA /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		403A22BF26FE1CE7008D8DEA /* module */ = {
+			isa = PBXGroup;
+			children = (
+				403A22AE26FE1CAC008D8DEA /* ContentView.swift */,
+				403A22D626FE6A57008D8DEA /* Reminder */,
+				403A22D526FE6A48008D8DEA /* Alarm */,
+			);
+			path = module;
+			sourceTree = "<group>";
+		};
+		403A22C026FE1CF0008D8DEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				403A22B026FE1CB3008D8DEA /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		403A22C126FE1CFA008D8DEA /* launch */ = {
+			isa = PBXGroup;
+			children = (
+				403A22B526FE1CB3008D8DEA /* LaunchScreen.storyboard */,
+			);
+			path = launch;
+			sourceTree = "<group>";
+		};
+		403A22CD26FE5092008D8DEA /* CoreDataAction */ = {
+			isa = PBXGroup;
+			children = (
+				40B2454427009297004C27A9 /* Reminder */,
+				40B2453A27008E8C004C27A9 /* Alarm */,
+			);
+			path = CoreDataAction;
+			sourceTree = "<group>";
+		};
+		403A22D526FE6A48008D8DEA /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				40B2453727008E19004C27A9 /* viewModel */,
+				403A22D826FE6A86008D8DEA /* model */,
+				403A22D726FE6A7D008D8DEA /* view */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
+		403A22D626FE6A57008D8DEA /* Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				40B2453E27008F66004C27A9 /* model */,
+				40B2453F27008F70004C27A9 /* view */,
+			);
+			path = Reminder;
+			sourceTree = "<group>";
+		};
+		403A22D726FE6A7D008D8DEA /* view */ = {
+			isa = PBXGroup;
+			children = (
+				403A22C326FE1D6F008D8DEA /* AlarmListView.swift */,
+				403A22D026FE64D5008D8DEA /* EditAlarmView.swift */,
+				403A22CB26FE3AF2008D8DEA /* AddAlarmView.swift */,
+				403A22C526FE1E8D008D8DEA /* AlarmCardView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		403A22D826FE6A86008D8DEA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				403A22D326FE68F9008D8DEA /* RepeatValue.swift */,
+				403A22D926FE6A98008D8DEA /* AlarmModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		403A22DB26FE6B1F008D8DEA /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				40B2453B27008EC2004C27A9 /* Error */,
+				403A22DC26FE6B2E008D8DEA /* DateUtility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		40B2453727008E19004C27A9 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				40B2453827008E2E004C27A9 /* AlarmViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		40B2453A27008E8C004C27A9 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				403A22CE26FE513D008D8DEA /* AlarmCoreDataAction.swift */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
+		40B2453B27008EC2004C27A9 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				40B2453C27008ED0004C27A9 /* DataBaseError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		40B2453E27008F66004C27A9 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				40B245422700916F004C27A9 /* ReminderModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		40B2453F27008F70004C27A9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				40B2454027009101004C27A9 /* AddReminderView.swift */,
+				403A22C926FE31A9008D8DEA /* ReminderCardView.swift */,
+				403A22C726FE2FA6008D8DEA /* ReminderListView.swift */,
+				409A7D8227009C6D00CEFF60 /* EditReminderView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		40B2454427009297004C27A9 /* Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				40B24545270092AA004C27A9 /* ReminderCoreDataAction.swift */,
+			);
+			path = Reminder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,10 +325,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				403A22CF26FE513D008D8DEA /* AlarmCoreDataAction.swift in Sources */,
 				403A22A826FE1CAC008D8DEA /* AppDelegate.swift in Sources */,
+				403A22C626FE1E8D008D8DEA /* AlarmCardView.swift in Sources */,
+				403A22C826FE2FA6008D8DEA /* ReminderListView.swift in Sources */,
 				403A22AA26FE1CAC008D8DEA /* SceneDelegate.swift in Sources */,
+				403A22CA26FE31A9008D8DEA /* ReminderCardView.swift in Sources */,
+				403A22D426FE68F9008D8DEA /* RepeatValue.swift in Sources */,
 				403A22AF26FE1CAC008D8DEA /* ContentView.swift in Sources */,
+				40B2454127009101004C27A9 /* AddReminderView.swift in Sources */,
+				403A22D126FE64D5008D8DEA /* EditAlarmView.swift in Sources */,
 				403A22AD26FE1CAC008D8DEA /* Eroute.xcdatamodeld in Sources */,
+				40B2453927008E2E004C27A9 /* AlarmViewModel.swift in Sources */,
+				403A22DD26FE6B2E008D8DEA /* DateUtility.swift in Sources */,
+				403A22C426FE1D6F008D8DEA /* AlarmListView.swift in Sources */,
+				40B2453D27008ED0004C27A9 /* DataBaseError.swift in Sources */,
+				403A22CC26FE3AF3008D8DEA /* AddAlarmView.swift in Sources */,
+				409A7D8327009C6D00CEFF60 /* EditReminderView.swift in Sources */,
+				403A22DA26FE6A98008D8DEA /* AlarmModel.swift in Sources */,
+				40B245432700916F004C27A9 /* ReminderModel.swift in Sources */,
+				40B24546270092AA004C27A9 /* ReminderCoreDataAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +485,7 @@
 				DEVELOPMENT_TEAM = P5RKT2K7BV;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Eroute/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,6 +506,7 @@
 				DEVELOPMENT_TEAM = P5RKT2K7BV;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Eroute/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
