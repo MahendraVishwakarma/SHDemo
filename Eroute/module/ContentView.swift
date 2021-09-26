@@ -42,7 +42,7 @@ struct ContentView: View {
                             .font(.title)
                         Text("Event")
                     }
-            }.tag(4)
+            }.tag(0)
 
             ReminderListView()
                 .tabItem {
@@ -50,15 +50,6 @@ struct ContentView: View {
                         Image(systemName: "bell.fill")
                             .font(.title)
                         Text("Reminder")
-                    }
-            }.tag(0)
-            
-            EventListView()
-                .tabItem {
-                    HStack {
-                        Image(systemName: "calendar")
-                            .font(.title)
-                        Text("Event")
                     }
             }.tag(1)
             

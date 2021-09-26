@@ -109,8 +109,6 @@ class EventCoreDataAction {
         }
     }
 
-
-
     // MARK: - Helper Method
     private func fetch<T: NSManagedObject>(type: T.Type, predicate: NSPredicate? = nil, sortDescriptors: [NSSortDescriptor]? = nil, managedObjectContext: NSManagedObjectContext, completion: @escaping (([T]?) -> Void)) {
 

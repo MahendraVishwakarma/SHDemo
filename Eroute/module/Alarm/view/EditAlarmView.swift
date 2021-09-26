@@ -55,7 +55,7 @@ struct EditAlarmView: View {
                 }
                 Spacer()
             }
-        }.navigationBarTitle("Add Alarm", displayMode: .inline)
+        }.navigationBarTitle("Edit Alarm", displayMode: .inline)
             .navigationBarItems(trailing: Button(action: {
                 self.removeAlarm()
             }, label: {

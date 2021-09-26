@@ -100,15 +100,15 @@
 		403A22A626FE1CAC008D8DEA /* Eroute */ = {
 			isa = PBXGroup;
 			children = (
-				403A22DB26FE6B1F008D8DEA /* Utility */,
-				403A22CD26FE5092008D8DEA /* CoreDataAction */,
 				403A22BE26FE1CC8008D8DEA /* AppDelegate */,
-				403A22AB26FE1CAC008D8DEA /* Eroute.xcdatamodeld */,
+				403A22CD26FE5092008D8DEA /* CoreDataAction */,
+				409A7D942700C41600CEFF60 /* CoreDataModel */,
 				403A22B826FE1CB3008D8DEA /* Info.plist */,
 				403A22C126FE1CFA008D8DEA /* launch */,
+				403A22BF26FE1CE7008D8DEA /* module */,
 				403A22B226FE1CB3008D8DEA /* Preview Content */,
 				403A22C026FE1CF0008D8DEA /* Resources */,
-				403A22BF26FE1CE7008D8DEA /* module */,
+				403A22DB26FE6B1F008D8DEA /* Utility */,
 			);
 			path = Eroute;
 			sourceTree = "<group>";
@@ -248,6 +248,14 @@
 				409A7D902700B54900CEFF60 /* EventCoreDataAction.swift */,
 			);
 			path = Event;
+			sourceTree = "<group>";
+		};
+		409A7D942700C41600CEFF60 /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				403A22AB26FE1CAC008D8DEA /* Eroute.xcdatamodeld */,
+			);
+			path = CoreDataModel;
 			sourceTree = "<group>";
 		};
 		40B2453A27008E8C004C27A9 /* Alarm */ = {
