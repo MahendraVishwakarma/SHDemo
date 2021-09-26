@@ -25,6 +25,11 @@
 		403A22DA26FE6A98008D8DEA /* AlarmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403A22D926FE6A98008D8DEA /* AlarmModel.swift */; };
 		403A22DD26FE6B2E008D8DEA /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403A22DC26FE6B2E008D8DEA /* DateUtility.swift */; };
 		409A7D8327009C6D00CEFF60 /* EditReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409A7D8227009C6D00CEFF60 /* EditReminderView.swift */; };
+		409A7D872700AD3800CEFF60 /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409A7D862700AD3800CEFF60 /* EventListView.swift */; };
+		409A7D8A2700AD7100CEFF60 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409A7D892700AD7100CEFF60 /* EventModel.swift */; };
+		409A7D8C2700AE5000CEFF60 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409A7D8B2700AE5000CEFF60 /* EventCardView.swift */; };
+		409A7D8E2700B36300CEFF60 /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409A7D8D2700B36300CEFF60 /* AddEventView.swift */; };
+		409A7D912700B54900CEFF60 /* EventCoreDataAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409A7D902700B54900CEFF60 /* EventCoreDataAction.swift */; };
 		40B2453927008E2E004C27A9 /* AlarmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B2453827008E2E004C27A9 /* AlarmViewModel.swift */; };
 		40B2453D27008ED0004C27A9 /* DataBaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B2453C27008ED0004C27A9 /* DataBaseError.swift */; };
 		40B2454127009101004C27A9 /* AddReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B2454027009101004C27A9 /* AddReminderView.swift */; };
@@ -53,6 +58,11 @@
 		403A22D926FE6A98008D8DEA /* AlarmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmModel.swift; sourceTree = "<group>"; };
 		403A22DC26FE6B2E008D8DEA /* DateUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtility.swift; sourceTree = "<group>"; };
 		409A7D8227009C6D00CEFF60 /* EditReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditReminderView.swift; sourceTree = "<group>"; };
+		409A7D862700AD3800CEFF60 /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
+		409A7D892700AD7100CEFF60 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		409A7D8B2700AE5000CEFF60 /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
+		409A7D8D2700B36300CEFF60 /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
+		409A7D902700B54900CEFF60 /* EventCoreDataAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCoreDataAction.swift; sourceTree = "<group>"; };
 		40B2453827008E2E004C27A9 /* AlarmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewModel.swift; sourceTree = "<group>"; };
 		40B2453C27008ED0004C27A9 /* DataBaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseError.swift; sourceTree = "<group>"; };
 		40B2454027009101004C27A9 /* AddReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderView.swift; sourceTree = "<group>"; };
@@ -124,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				403A22AE26FE1CAC008D8DEA /* ContentView.swift */,
+				409A7D842700AD1900CEFF60 /* Event */,
 				403A22D626FE6A57008D8DEA /* Reminder */,
 				403A22D526FE6A48008D8DEA /* Alarm */,
 			);
@@ -149,6 +160,7 @@
 		403A22CD26FE5092008D8DEA /* CoreDataAction */ = {
 			isa = PBXGroup;
 			children = (
+				409A7D8F2700B53B00CEFF60 /* Event */,
 				40B2454427009297004C27A9 /* Reminder */,
 				40B2453A27008E8C004C27A9 /* Alarm */,
 			);
@@ -201,6 +213,41 @@
 				403A22DC26FE6B2E008D8DEA /* DateUtility.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		409A7D842700AD1900CEFF60 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				409A7D882700AD6400CEFF60 /* model */,
+				409A7D852700AD2B00CEFF60 /* view */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		409A7D852700AD2B00CEFF60 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				409A7D862700AD3800CEFF60 /* EventListView.swift */,
+				409A7D8B2700AE5000CEFF60 /* EventCardView.swift */,
+				409A7D8D2700B36300CEFF60 /* AddEventView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		409A7D882700AD6400CEFF60 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				409A7D892700AD7100CEFF60 /* EventModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		409A7D8F2700B53B00CEFF60 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				409A7D902700B54900CEFF60 /* EventCoreDataAction.swift */,
+			);
+			path = Event;
 			sourceTree = "<group>";
 		};
 		40B2453727008E19004C27A9 /* viewModel */ = {
@@ -326,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				403A22CF26FE513D008D8DEA /* AlarmCoreDataAction.swift in Sources */,
+				409A7D8C2700AE5000CEFF60 /* EventCardView.swift in Sources */,
 				403A22A826FE1CAC008D8DEA /* AppDelegate.swift in Sources */,
 				403A22C626FE1E8D008D8DEA /* AlarmCardView.swift in Sources */,
 				403A22C826FE2FA6008D8DEA /* ReminderListView.swift in Sources */,
@@ -335,6 +383,7 @@
 				403A22AF26FE1CAC008D8DEA /* ContentView.swift in Sources */,
 				40B2454127009101004C27A9 /* AddReminderView.swift in Sources */,
 				403A22D126FE64D5008D8DEA /* EditAlarmView.swift in Sources */,
+				409A7D872700AD3800CEFF60 /* EventListView.swift in Sources */,
 				403A22AD26FE1CAC008D8DEA /* Eroute.xcdatamodeld in Sources */,
 				40B2453927008E2E004C27A9 /* AlarmViewModel.swift in Sources */,
 				403A22DD26FE6B2E008D8DEA /* DateUtility.swift in Sources */,
@@ -342,6 +391,9 @@
 				40B2453D27008ED0004C27A9 /* DataBaseError.swift in Sources */,
 				403A22CC26FE3AF3008D8DEA /* AddAlarmView.swift in Sources */,
 				409A7D8327009C6D00CEFF60 /* EditReminderView.swift in Sources */,
+				409A7D8E2700B36300CEFF60 /* AddEventView.swift in Sources */,
+				409A7D912700B54900CEFF60 /* EventCoreDataAction.swift in Sources */,
+				409A7D8A2700AD7100CEFF60 /* EventModel.swift in Sources */,
 				403A22DA26FE6A98008D8DEA /* AlarmModel.swift in Sources */,
 				40B245432700916F004C27A9 /* ReminderModel.swift in Sources */,
 				40B24546270092AA004C27A9 /* ReminderCoreDataAction.swift in Sources */,

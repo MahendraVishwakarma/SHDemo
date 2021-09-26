@@ -1,16 +1,17 @@
 //
-//  AlarmCoreDataAction.swift
+//  EventCoreDataAction.swift
 //  Eroute
 //
-//  Created by bhavesh on 25/09/21.
+//  Created by bhavesh on 26/09/21.
 //  Copyright © 2021 Bhavesh. All rights reserved.
 //
+
 import UIKit
 import CoreData
 
-class AlarmCoreDataAction {
+class EventCoreDataAction {
 
-    static let shared = AlarmCoreDataAction()
+    static let shared = EventCoreDataAction()
 
     private init() { }
 
@@ -27,48 +28,49 @@ class AlarmCoreDataAction {
         }
     }
 
-    func saveAlarm(with model: AlarmModel) {
+    func saveEvent(with model: EventModel) {
         let managedContext = getContext()
-        let newAlarm = Alarm(context: managedContext)
+        let newEvent = Event(context: managedContext)
 
-        newAlarm.id = model.id
-        newAlarm.dateText = model.dateText
-        newAlarm.isSnooze = model.isSnooze
-        newAlarm.repeatValue = Int16(model.repeatValue)
-        newAlarm.label = model.label
+        newEvent.id = model.id
+        newEvent.name = model.name
+        newEvent.dateText = model.dateText
+        newEvent.startTimeText = model.startTimeText
+        newEvent.endTimeText = model.endTimeText
+        newEvent.eventDescription = model.eventDescription
 
         saveContext(with: managedContext)
 
     }
 
-    func fetchAlarms(completion: @escaping (Result<[AlarmModel], DataBaseError>) -> Void) {
+    func fetchEvents(completion: @escaping (Result<[EventModel], DataBaseError>) -> Void) {
         let managedContext = getContext()
-        fetch(type: Alarm.self, managedObjectContext: managedContext) { [weak self] (alarmList: [Alarm]?) in
+        fetch(type: Event.self, managedObjectContext: managedContext) { [weak self] (eventList: [Event]?) in
 
-            guard let alarmList = alarmList,
-                alarmList.count > 0 else {
+            guard let eventList = eventList,
+                eventList.count > 0 else {
                 completion(.failure(.noDataFound(String(describing: Alarm.self))))
                 return
             }
 
-            let listAlarmModel = alarmList.map{ AlarmModel(from: $0) }
-            completion(.success(listAlarmModel))
+            let listEventModel = eventList.map{ EventModel(from: $0) }
+            completion(.success(listEventModel))
         }
     }
 
-    func removeAlarm(with model: AlarmModel, completion: @escaping (Bool) -> Void){
+    func removeEvent(with model: EventModel, completion: @escaping (Bool) -> Void){
         let managedContext = getContext()
 
         let predicate = NSPredicate(format: "id == %@", model.id.uuidString)
-        fetch(type: Alarm.self, predicate: predicate, managedObjectContext: managedContext) { [weak self] (alarmList: [Alarm]?) in
+        fetch(type: Event.self, predicate: predicate, managedObjectContext: managedContext) { [weak self] (eventList: [Event]?) in
 
             guard let self = self else {
                 completion(false)
                 return
             }
 
-            if let alarm = alarmList?.first {
-                managedContext.delete(alarm)
+            if let event = eventList?.first {
+                managedContext.delete(event)
                 completion(true)
             } else {
                 completion(false)
@@ -80,22 +82,23 @@ class AlarmCoreDataAction {
     }
 
 
-    func updateAlarm(with model: AlarmModel, completion: @escaping (Bool) -> Void) {
+    func updateEvent(with model: EventModel, completion: @escaping (Bool) -> Void) {
         let managedContext = getContext()
         let predicate = NSPredicate(format: "id == %@", model.id.uuidString)
-        fetch(type: Alarm.self, predicate: predicate, managedObjectContext: managedContext) { [weak self] (alarmList: [Alarm]?) in
+        fetch(type: Event.self, predicate: predicate, managedObjectContext: managedContext) { [weak self] (eventList: [Event]?) in
 
             guard let self = self else {
                 completion(false)
                 return
             }
 
-            if let updateAlarm = alarmList?.first {
-                updateAlarm.id = model.id
-                updateAlarm.dateText = model.dateText
-                updateAlarm.isSnooze = model.isSnooze
-                updateAlarm.repeatValue = Int16(model.repeatValue)
-                updateAlarm.label = model.label
+            if let updateEvent = eventList?.first {
+                updateEvent.id = model.id
+                updateEvent.name = model.name
+                updateEvent.dateText = model.dateText
+                updateEvent.startTimeText = model.startTimeText
+                updateEvent.endTimeText = model.endTimeText
+                updateEvent.eventDescription = model.eventDescription
                 completion(true)
             } else {
                 completion(false)

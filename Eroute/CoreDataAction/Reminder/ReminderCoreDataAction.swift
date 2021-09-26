@@ -133,7 +133,7 @@ class ReminderCoreDataAction {
 
 
     // MARK: - Helper Method
-    func fetch<T: NSManagedObject>(type: T.Type, predicate: NSPredicate? = nil, sortDescriptors: [NSSortDescriptor]? = nil, managedObjectContext: NSManagedObjectContext, completion: @escaping (([T]?) -> Void)) {
+    private func fetch<T: NSManagedObject>(type: T.Type, predicate: NSPredicate? = nil, sortDescriptors: [NSSortDescriptor]? = nil, managedObjectContext: NSManagedObjectContext, completion: @escaping (([T]?) -> Void)) {
 
         managedObjectContext.perform {
             let request: NSFetchRequest<T> = NSFetchRequest<T>(entityName: String(describing: type))

@@ -36,8 +36,10 @@ struct AddReminderView: View {
             }
         }.navigationBarTitle("Add Reminder", displayMode: .inline)
             .alert(isPresented: $isAlertPresented) {
-                Alert(title: Text(""), message: Text("Please Enter Label, It is mandatory"), dismissButton: .default(Text("OK")
-                    .foregroundColor(Color.orange)))
+                Alert(title: Text(""),
+                      message: Text("Please Enter Reminder Label"),
+                      dismissButton: .default(Text("OK"))
+                )
         }
     }
 

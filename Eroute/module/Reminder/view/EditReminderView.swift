@@ -40,7 +40,7 @@ struct EditReminderView: View {
                     debugPrint("udpate Button Clicked")
                     self.updateReminder()
                 }) {
-                    Text("Save")
+                    Text("Update")
                         .font(.title)
                 }
                 Spacer()
@@ -52,8 +52,10 @@ struct EditReminderView: View {
                 Image(systemName: "trash")
             }))
             .alert(isPresented: $isAlertPresented) {
-                Alert(title: Text(""), message: Text("Please Enter Label, It is mandatory"), dismissButton: .default(Text("OK")
-                    .foregroundColor(Color.orange)))
+                Alert(title: Text(""),
+                      message: Text("Please Enter Reminder Label"),
+                      dismissButton: .default(Text("OK"))
+                )
         }
     }
 
